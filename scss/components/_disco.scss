@@ -1,0 +1,244 @@
+.disco__container{
+  width: 70%;  
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+
+    & .active {
+      transform: rotateY(180deg);
+    }
+
+    .card {
+      background: #222;
+      /* cursor: pointer; */
+      height: 300px;
+      transform-style: preserve-3d;
+      transition: transform 0.4s ease 0s;
+      /* width: 100%; */
+
+      .front, .back {
+        backface-visibility: hidden;
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        border: 5px solid $green;
+      }
+
+      .front{
+
+        img{
+          width: 100%;
+          
+        }
+      
+      
+
+      }
+
+      .back {
+        transform: rotateY( 180deg);
+
+        .tracklist{
+          margin: 1rem;
+
+          li{
+            list-style-type: none;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+
+            &:hover{
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  
+
+  
+}
+
+.play{
+  display: flex;
+  align-items: flex-end;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  p{
+    color: $green;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: -0.2rem;
+
+    &:hover{
+      color: $white;
+    }
+    
+  }
+  i{
+    font-size: 1rem;
+    color: $green;
+    text-align: center;
+    text-shadow: black 1px 0 10px;
+    margin-top: 1rem;
+
+  }
+  .volver{
+    font-size: 1rem;
+    color: $green;
+    text-align: center;
+    text-shadow: black 1px 0 10px;
+    margin-top: 1rem;
+    transform: rotate(180deg);
+  }
+}
+
+.reverse{
+  flex-direction: row-reverse !important;
+}
+
+
+
+
+.reproductor-album{
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  header{
+    nav{
+      i{
+        font-size: 0.8rem;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+  
+  .cancion{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h2{
+      background-color: rgba($color: #000000, $alpha: 0.9);
+      padding: 0.2rem;
+      border-bottom: 3px solid $green;
+    }
+
+
+    .reproductor{
+      position: relative;
+      width: 100%;
+
+      iframe{
+        width: 100%;
+        height: 220px;
+        border: 4px solid $green;
+      }
+
+      .detector{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: transparent;
+      }
+    }
+
+    .album-controls{
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+
+      i{
+        font-size: 1.8rem;
+        color: $green;
+
+        &:hover{
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .reproductor__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .discografia__button, .youtube__button{
+      width: 200px;
+      padding: 0.3rem;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba($color: #000000, $alpha: 0.9);
+      margin-bottom: 0.3rem;
+
+      i{
+        margin-right: 0.3rem;
+      }
+    }
+
+    .discografia__button{
+      border: 2px solid $green;
+      color: $green;
+
+      &:hover{
+        background-color: $green;
+
+      }
+
+      &:hover a, &:hover i{
+        color: black;
+      }
+
+      a{
+        color: $green;
+
+
+      }
+    }
+    .youtube__button{
+      border: 2px solid red;
+      color: red;
+
+      &:hover{
+        background-color: red;
+
+      }
+
+      &:hover a, &:hover i{
+        color: $white;
+      }
+      
+      a{
+        color: red;
+      }
+    }
+  }
+
+}
+
+#particles-js {
+	height: 100%; 
+	width: 100%;
+  position: fixed;
+  z-index: -1;
+}

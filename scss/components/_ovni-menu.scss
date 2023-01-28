@@ -1,0 +1,45 @@
+
+.ovni-menu{
+  position: fixed;
+  top: 40vh;
+  right: 1rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  svg{
+    height: 20px;
+    fill: $white;
+    margin-bottom: 0.5rem;
+    z-index: 10;
+
+    &:hover{
+      cursor: pointer;
+      fill: $green;
+    }
+  }
+
+  .redes-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba($color: #3a3a3a, $alpha: 0.8);
+    margin-top: -1rem;
+    padding-top: 1.2rem;
+
+    a{
+      color: $green;
+      margin-bottom: 0.2rem;
+
+      &:hover{
+        color: $white;
+      }
+
+      i{
+        font-size: 20px;
+
+      }
+    }
+  }
+}

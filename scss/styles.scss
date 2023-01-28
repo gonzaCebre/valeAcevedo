@@ -1,0 +1,58 @@
+@import './base/variables';
+@import './components/header';
+@import './components/carousel';
+@import './components/inicio';
+@import './components/disco';
+@import './components/tour';
+@import './components/contacto';
+@import './components/ovni-menu';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $principal;
+  background-color: black;
+  color: $white;
+  text-transform: uppercase;
+  position: relative;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer{
+  font-size: 0.5rem;
+  color: $acento;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  a{
+    font-size: 0.5rem;
+    margin-left: 0.2rem;
+    color: $acento;
+
+    &:hover{
+      color: $green;
+    }
+  }
+}
+
+.no-mostrar{
+  display: none !important;
+}
+
+#sky{
+	height: 100%; 
+	width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+

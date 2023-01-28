@@ -1,0 +1,140 @@
+//  COLORES
+$white: white;
+$green: #47DD5F;
+$acento: #0A99D1;
+
+//  FUENTES
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Titan+One&family=Fredoka+One&display=swap');
+
+
+$titulo:  'Fredoka';
+$principal: 'Fredoka';
+
+
+@mixin title {
+  font-family: $titulo;
+  color: $green;
+  text-align: center;
+  margin: auto; 
+  /* -webkit-text-stroke: 1.5px  black; */
+  margin-top: 1rem;
+}
+
+h1{
+  @include title;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+h2{
+  @include title;
+  font-size: 1.375rem;
+  z-index: 2;
+  margin-bottom: 1rem;
+}
+
+h3{
+  font-family: $titulo;
+  font-size: 1.1rem;
+  color: $white;
+  text-align: center;
+  margin: auto; 
+}
+
+p{
+  font-family: $principal;
+  font-size: .7rem;
+  color: $white;
+  text-align: center;
+}
+
+a{
+  font-family: $principal;
+  font-size: 1rem;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover{
+    color: $green;
+  }
+}
+
+//COMPONENTES
+
+section{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+
+//  BOTONES
+.boton {
+  height: 2.1875rem;
+  width: fit-content;
+  border: 2px solid $green;
+  font-family: $principal;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background-color: $acento;
+  color: $green;
+  -webkit-text-stroke: 1px $green;
+  padding: 0 1rem;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 768px){
+  h1{
+    font-size: 2rem;
+  }
+  
+  h2{
+    font-size: 1.8rem;
+  }
+  
+  h3{
+    font-size: 1.5rem;
+  }
+  
+  p{
+    font-size: 1.2rem;
+  }
+
+  .boton {
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+
+    &:hover{
+      border: 2px solid $acento;
+      background-color: $green;
+      color: $acento;
+      -webkit-text-stroke: 1px $acento;
+    }
+  }
+}
+
+
+@media screen and (min-width: 992px){
+  h1{
+    font-size: 2.5rem;
+  }
+  
+  h2{
+    font-size: 2.3rem;
+  }
+  
+  h3{
+    font-size: 2rem;
+  }
+  
+  p{
+    font-size: 1.3rem;
+  }
+
+}

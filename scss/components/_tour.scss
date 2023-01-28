@@ -1,0 +1,27 @@
+
+.fecha{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  .entradas{
+    font-family: $principal;
+    font-size: .7rem;
+    color: $acento;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.ver-mas{
+  font-family: $principal;
+  font-size: .7rem;
+  color: $acento;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover{
+    color: $green;
+  }
+}
