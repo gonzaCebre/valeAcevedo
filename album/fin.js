@@ -117,7 +117,7 @@ detector.addEventListener('click', () => {
 	console.log('click')
 	detector.parentNode.removeChild(detector);
 	setTimeout(()=>{
-		window.open("https://www.w3schools.com", "_self");
+		window.open("../index.html", "_self");
 	},46000) 
 })
 

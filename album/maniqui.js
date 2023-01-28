@@ -113,5 +113,5 @@ particlesJS("particles-js",
 )
 
 setTimeout(()=>{
-	/* window.open("https://www.w3schools.com", "_self"); */
-},5000)
+	window.open("./teiki-risi.html", "_self"); 
+},279000)
