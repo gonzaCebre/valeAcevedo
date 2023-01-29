@@ -114,6 +114,16 @@
   justify-content: space-between;
   align-items: center;
 
+  .cubre-fondo{
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+  }
+
   header{
     nav{
       i{
@@ -132,7 +142,7 @@
     position: relative;
 
     h2{
-      background-color: rgba($color: #000000, $alpha: 0.9);
+      /* background-color: rgba($color: #000000, $alpha: 0.9); */
       padding: 0.2rem;
       border-bottom: 3px solid $green;
     }
@@ -240,5 +250,56 @@
 	height: 100%; 
 	width: 100%;
   position: fixed;
+  z-index: -2;
+}
+#personaje {
+	height: 100%; 
+	width: 100%;
+  position: fixed;
   z-index: -1;
+}
+
+@mixin fondo{
+  width: 100vw;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+
+.luces-azules-fondo{
+  @include fondo; 
+  background-image: url("../../media/fondos/luces02.png");
+}
+.maniqui-fondo{
+  @include fondo; 
+  background-image: url("../../media/fondos/maniqui-fondo.jpg");
+}
+.teiki-fondo{
+  @include fondo; 
+  background-image: url("../../media/fondos/teiki-fondo.jpg");
+}
+.como-vos-fondo{
+  @include fondo; 
+  background-image: url("../../media/fondos/como-vos-fondo.jpg");
+}
+.fin-fondo{
+  @include fondo; 
+  background-image: url("../../media/fondos/fin-fondo.jpg");
+}
+.hormigas-fondo{
+  @include fondo; 
+  background-image: url("../../media/fondos/hormigas-fondo.jpg");
+}
+.muzza-fondo{
+  @include fondo; 
+  background-image: url("../../media/fondos/muzza-fondo.jpg");
+}
+.no-te-olvides-fondo{
+  @include fondo; 
+  background-image: url("../../media/fondos/no-te-olvides-fondo.jpg");
+}
+.un-poco-mas-fondo{
+  @include fondo; 
+  background-image: url("../../media/fondos/un-poco-mas-fondo.jpg");
 }

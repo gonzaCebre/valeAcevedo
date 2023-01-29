@@ -361,6 +361,14 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
+  .reproductor-album .cubre-fondo {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2; }
   .reproductor-album header nav i {
     font-size: 0.8rem;
     margin-right: 0.3rem; }
@@ -372,7 +380,7 @@ header {
     align-items: center;
     position: relative; }
     .reproductor-album .cancion h2 {
-      background-color: rgba(0, 0, 0, 0.9);
+      /* background-color: rgba($color: #000000, $alpha: 0.9); */
       padding: 0.2rem;
       border-bottom: 3px solid #47DD5F; }
     .reproductor-album .cancion .reproductor {
@@ -438,7 +446,76 @@ header {
   height: 100%;
   width: 100%;
   position: fixed;
+  z-index: -2; }
+
+#personaje {
+  height: 100%;
+  width: 100%;
+  position: fixed;
   z-index: -1; }
+
+.luces-azules-fondo {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../media/fondos/luces02.png"); }
+
+.maniqui-fondo {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../media/fondos/maniqui-fondo.jpg"); }
+
+.teiki-fondo {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../media/fondos/teiki-fondo.jpg"); }
+
+.como-vos-fondo {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../media/fondos/como-vos-fondo.jpg"); }
+
+.fin-fondo {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../media/fondos/fin-fondo.jpg"); }
+
+.hormigas-fondo {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../media/fondos/hormigas-fondo.jpg"); }
+
+.muzza-fondo {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../media/fondos/muzza-fondo.jpg"); }
+
+.no-te-olvides-fondo {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../media/fondos/no-te-olvides-fondo.jpg"); }
+
+.un-poco-mas-fondo {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../media/fondos/un-poco-mas-fondo.jpg"); }
 
 .fecha {
   display: flex;

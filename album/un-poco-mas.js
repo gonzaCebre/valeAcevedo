@@ -1,62 +1,61 @@
-//PARTICLES
 particlesJS("particles-js",
 	{
 		"particles": {
 			"number": {
-				"value": 10,
+				"value": 48,
 				"density": {
 					"enable": true,
 					"value_area": 800
 				}
 			},
 			"color": {
-				"value": "#000000"
+				"value": "#ffffff"
 			},
 			"shape": {
-				"type": "image",
+				"type": "star",
 				"stroke": {
 					"width": 0,
-					"color": "#000"
+					"color": "#000000"
 				},
 				"polygon": {
-					"nb_sides": 6
+					"nb_sides": 5
 				},
 				"image": {
-					"src": "../media/antifaz-min.png",
-					"width": '100px',
-					"height": '100px'
+					"src": "",
+					"width": 100,
+					"height": 100
 				}
 			},
 			"opacity": {
-				"value": 0.3,
+				"value": 1,
 				"random": true,
 				"anim": {
-					"enable": false,
+					"enable": true,
 					"speed": 1,
-					"opacity_min": 0.1,
+					"opacity_min": 0,
 					"sync": false
 				}
 			},
 			"size": {
-				"value": 164.3497362387161,
+				"value": 3,
 				"random": true,
 				"anim": {
-					"enable": true,
-					"speed": 10,
-					"size_min": 40,
-					"sync": true
+					"enable": false,
+					"speed": 4,
+					"size_min": 0.3,
+					"sync": false
 				}
 			},
 			"line_linked": {
 				"enable": false,
-				"distance": 200,
+				"distance": 176.3753266952075,
 				"color": "#ffffff",
-				"opacity": 1,
-				"width": 2
+				"opacity": 0.4,
+				"width": 0
 			},
 			"move": {
 				"enable": true,
-				"speed": 8,
+				"speed": 1,
 				"direction": "none",
 				"random": true,
 				"straight": false,
@@ -65,7 +64,7 @@ particlesJS("particles-js",
 				"attract": {
 					"enable": false,
 					"rotateX": 600,
-					"rotateY": 1200
+					"rotateY": 600
 				}
 			}
 		},
@@ -73,11 +72,11 @@ particlesJS("particles-js",
 			"detect_on": "canvas",
 			"events": {
 				"onhover": {
-					"enable": true,
-					"mode": "repulse"
+					"enable": false,
+					"mode": "bubble"
 				},
 				"onclick": {
-					"enable": true,
+					"enable": false,
 					"mode": "repulse"
 				},
 				"resize": true
@@ -90,14 +89,14 @@ particlesJS("particles-js",
 					}
 				},
 				"bubble": {
-					"distance": 400,
-					"size": 40,
+					"distance": 250,
+					"size": 0,
 					"duration": 2,
-					"opacity": 8,
+					"opacity": 0,
 					"speed": 3
 				},
 				"repulse": {
-					"distance": 292.34779642848423,
+					"distance": 400,
 					"duration": 0.4
 				},
 				"push": {
@@ -112,6 +111,13 @@ particlesJS("particles-js",
 	}
 )
 
-setTimeout(()=>{
-	window.open("./hormigas.html", "_self");
-},238000)
+
+const detector = document.getElementById('detector');
+detector.addEventListener('click', () => {
+	console.log('click')
+	detector.parentNode.removeChild(detector);
+	setTimeout(()=>{
+		window.open("./hormigas.html", "_self");
+	},238000)
+	
+})
