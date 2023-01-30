@@ -459,63 +459,63 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../media/fondos/luces02.png"); }
+  background-image: url("./media/fondos/luces02.png"); }
 
 .maniqui-fondo {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../media/fondos/maniqui-fondo.jpg"); }
+  background-image: url("./media/fondos/maniqui-fondo.jpg"); }
 
 .teiki-fondo {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../media/fondos/teiki-fondo.jpg"); }
+  background-image: url("./media/fondos/teiki-fondo.jpg"); }
 
 .como-vos-fondo {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../media/fondos/como-vos-fondo.jpg"); }
+  background-image: url("./media/fondos/como-vos-fondo.jpg"); }
 
 .fin-fondo {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../media/fondos/fin-fondo.jpg"); }
+  background-image: url("./media/fondos/fin-fondo.jpg"); }
 
 .hormigas-fondo {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../media/fondos/hormigas-fondo.jpg"); }
+  background-image: url("./media/fondos/hormigas-fondo.jpg"); }
 
 .muzza-fondo {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../media/fondos/muzza-fondo.jpg"); }
+  background-image: url("./media/fondos/muzza-fondo.jpg"); }
 
 .no-te-olvides-fondo {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../media/fondos/no-te-olvides-fondo.jpg"); }
+  background-image: url("./media/fondos/no-te-olvides-fondo.jpg"); }
 
 .un-poco-mas-fondo {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../media/fondos/un-poco-mas-fondo.jpg"); }
+  background-image: url("./media/fondos/un-poco-mas-fondo.jpg"); }
 
 .fecha {
   display: flex;
