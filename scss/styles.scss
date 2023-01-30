@@ -49,10 +49,32 @@ footer{
   display: none !important;
 }
 
-#sky{
+#particles-js{
 	height: 100%; 
 	width: 100%;
   position: fixed;
   z-index: -1;
+}
+
+
+@media screen and (min-width: 768px){
+  footer{
+    font-size: 0.8rem;
+  
+    a{
+      font-size: 0.8rem;
+    }
+  }
+
+}
+
+@media screen and (min-width: 992px){
+  footer{
+    font-size: 1rem;
+  
+    a{
+      font-size: 1rem;
+    }
+  }
 }
 

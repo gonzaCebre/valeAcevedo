@@ -16,7 +16,6 @@ $principal: 'Fredoka';
   color: $green;
   text-align: center;
   margin: auto; 
-  /* -webkit-text-stroke: 1.5px  black; */
   margin-top: 1rem;
 }
 
@@ -137,4 +136,8 @@ section{
     font-size: 1.3rem;
   }
 
+  .boton {
+    font-size: 1.4rem;
+  }
 }
+

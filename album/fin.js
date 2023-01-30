@@ -111,12 +111,12 @@ particlesJS("particles-js",
 	}
 )
 
-const detector = document.getElementById('detector');
+/* const detector = document.getElementById('detector');
 detector.addEventListener('click', () => {
 	console.log('click')
 	detector.parentNode.removeChild(detector);
 	setTimeout(()=>{
 		window.open("../index.html", "_self");
 	},46000) 
-})
+}) */
 

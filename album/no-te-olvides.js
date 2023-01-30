@@ -112,7 +112,7 @@ particlesJS("particles-js",
 )
 
 
-const detector = document.getElementById('detector');
+/* const detector = document.getElementById('detector');
 detector.addEventListener('click', () => {
 	console.log('click')
 	detector.parentNode.removeChild(detector);
@@ -120,4 +120,4 @@ detector.addEventListener('click', () => {
 	setTimeout(()=>{
 		window.open("./muzza.html", "_self");
 	},286000)
-})
+}) */

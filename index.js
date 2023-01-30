@@ -93,7 +93,7 @@ window.addEventListener("load", function(){
 });
 
 
-particlesJS("sky",
+particlesJS("particles-js",
 	{
 		"particles": {
 			"number": {
